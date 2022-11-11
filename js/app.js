@@ -3,10 +3,10 @@
 const openBtn = document.getElementById("nav-btn");
 const closeBtn = document.getElementById("close-btn");
 const sidebar = document.getElementById("sidebar");
-const navbar = document.getElementById('nav')
+const navbar = document.getElementById("nav");
 
 openBtn.addEventListener("click", function () {
-  console.log(sidebar.classList.add("show-sidebar"));
+  sidebar.classList.add("show-sidebar");
 });
 
 closeBtn.addEventListener("click", function () {
@@ -14,10 +14,10 @@ closeBtn.addEventListener("click", function () {
 });
 
 // fixed navbar
-window.addEventListener('scroll', function () {
-  if(this.window.pageYOffset > 80) {
-    navbar.classList.add('navbar-fixed')
+window.addEventListener("scroll", function () {
+  if (this.window.pageYOffset > 80) {
+    navbar.classList.add("navbar-fixed");
   } else {
-    navbar.classList.remove('navbar-fixed')
+    navbar.classList.remove("navbar-fixed");
   }
-})
+});
